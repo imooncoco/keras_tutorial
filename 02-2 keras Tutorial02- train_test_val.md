@@ -1,4 +1,5 @@
 <h2> 02-2 keras Tutorial02- train, test, validation data</h2>
+
 - Train set
 
   학습에 사용되는 모델에 맞는 예제 세트
