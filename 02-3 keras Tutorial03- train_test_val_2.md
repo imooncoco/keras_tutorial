@@ -4,8 +4,7 @@
 
 
 <h4>1. data 구성</h4>
-```python
-import numpy as np
+```python import numpy as np
 
 x = np.array(range(1, 101))
 y = np.array(range(1, 101))
