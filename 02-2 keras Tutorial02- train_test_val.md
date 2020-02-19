@@ -14,7 +14,7 @@
 
   신경망에서 히든 유닛의수를 선택하기 위해 분류기의 매개변수를 조정하는데 사용되는 예제세트
 
-![](C:\Users\imoon\OneDrive\바탕 화면\keras02.PNG)
+
 
 
 
@@ -66,13 +66,14 @@ model.compile(loss='mse', optimizer='adam', metrics=['mse'])
 model.fit(x_train, y_train, epochs=100, batch_size=1, validation_data=(x_val, y_val)
 ```
 
-- fit의 파라미터인 **validation_data=(x_val, y_val)** 부분을 살펴보면,
+- fit의 파라미터인 
+**validation_data=(x_val, y_val)**  부분을 살펴보면,
 
   validation set으로 일단 x_val, y_val을 주고 epoch 1번을 돌때마다 검사하여 w를 수정하게 됩니다.
 
-  **fit(훈련)**은 **[x_train, y_train]** 와 **[x_val, y_val]** 사용합니다.
-
-  **evaluate(평가)**는 **[x_test, y_test]** 사용합니다.
+  fit(훈련)은 [x_train, y_train] 와 [x_val, y_val] 사용합니다.
+  
+  evaluate(평가)는 [x_test, y_test] 사용합니다.
 
    
 
