@@ -18,6 +18,8 @@
 
 
 <h4>1. data 구성</h4>
+
+
 ```python
 import numpy as np
 
@@ -32,6 +34,7 @@ y_val = np.array([101, 102, 103, 104, 105])
 
 
 <h4>2. model 구성</h4>
+
 ```python
 from keras.models import Sequential
 from keras.layers import Dense
@@ -49,6 +52,7 @@ model.summary()
 
 
 <h4>3. model compile</h4>
+
 ```python
 model.compile(loss='mse', optimizer='adam', metrics=['mse'])
 ```
@@ -56,6 +60,7 @@ model.compile(loss='mse', optimizer='adam', metrics=['mse'])
 
 
 <h4>4. model train</h4>
+
 ```python
 model.fit(x_train, y_train, epochs=100, batch_size=1, validation_data=(x_val, y_val)
 ```
@@ -71,6 +76,7 @@ model.fit(x_train, y_train, epochs=100, batch_size=1, validation_data=(x_val, y_
    
 
 <h4>5. model evaluate</h4>
+
 ```python
 loss, mse = model.evaluate(x_test, y_test, batch_size=1)
 print('acc: ', mse)
@@ -79,6 +85,7 @@ print('acc: ', mse)
 
 
 <h4>6. model predict</h4>
+
 ```python
 x_prd=np.array([11, 12, 13])
 aaa=model.predict(x_prd, batch_size=1)
